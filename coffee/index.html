@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/menu.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="icon" href="./images/site-icon.webp" />
+    <title>Dessert Caf&eacute;</title>
+  </head>
+  <body>
+    <div class="nav">
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-header">
+        <div class="nav-title">
+          <a href="#home"><span>Dessert Caf&eacute;</span></a>
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <!--------------- Home Section --------------->
+    <div id="home" class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img class="slide-img" src="./images/home1.jpg" alt="Tables" />
+        <div class="text">Dine-In</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img class="slide-img" src="./images/home2.jpeg" alt="Strawberry Cheese Cake" />
+        <div class="text">Delicious Desserts</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img class="slide-img" src="./images/drink2.jpg" />
+        <div class="text">Refreshing Drinks</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img class="slide-img" src="./images/icecream4.jpg"/>
+        <div class="text">Healthy Ingredients</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div style="text-align: center" class="dot-wrapper">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <hr />
+    </div>
+
+    <h1>Dessert Caf&eacute;</h1>
+    <div>
+      <a href="#about">
+        <div class="arrow-down">
+          <div class="left-arrow-wing"></div>
+          <div class="right-arrow-wing"></div>
+        </div>
+      </a>
+    </div>
+
+    <!--------------- About Section --------------->
+    <div class="about-flex-wrapper" id="about">
+      <h1 class="divider">About Us</h1>
+    </div>
+
+    <div class="about-container">
+      <div>
+        <h2>Dine-In</h2>
+        <br />
+        <p>
+          Dessert Caf&eacute; is a popular dessert destination for college students, local
+          residents, and travellers. We provide friendly service and offer a scrumptious array of
+          quality desserts in the busy college Shops Plaza located around karur.
+        </p>
+        <br />
+        <img class="about-img" src="./images/site-icon.jpg" alt="Dine-In" />
+        <p></p>
+      </div>
+
+      <div>
+        <h2>Takeout or Delivery</h2>
+        <br />
+        <p>
+          We carry several takeout box sizes to fit all our menu items, so come on in and grab a
+          delectable dessert to enjoy on the go.
+        </p>
+        <br />
+        <p>We also provide delivery services.</p>
+
+        <br />
+        <img class="about-img" src="./images/takeout1.jpg" alt="Takeout or Delivery" />
+      </div>
+    </div>
+
+    <!--------------- Menu Section --------------->
+    <div class="menu-flex-wrapper" id="menu">
+      <h1 class="divider">Menu</h1>
+    </div>
+
+    <div class="menu-container">
+      <div class="menu">
+        <h2 class="menu-group-heading">Cake Slices</h2>
+        <div class="menu-group">
+          <div class="menu-item">
+            <img class="menu-item-image" src="./images/cake1.jpg" alt="Matcha Swiss Roll" />
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Matcha Swiss Roll</span>
+                <span class="menu-item-price">&#8364;5,50/slice</span>
+              </h3>
+              <p class="menu-item-description">
+                Soft and fluffy sponge cake infused with matcha, perfectly balanced with creamy
+                whipped cream filling. This guilty-free dessert has no butter or oil added, and it
+                is packed with antioxidants.
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item-image" src="./images/cake2.png" alt="Strawberry Roll Cake" />
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Strawberry Cake Roll</span>
+                <span class="menu-item-price">&#8364;4,00/slice</span>
+              </h3>
+              <p class="menu-item-description">
+                Light and airy sponge cake filled with fresh strawberries and delicate whipped
+                cream. The cake is kept chilled until it is served, to bring out its refreshing
+                qualities.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img class="menu-item-image" src="./images/cake3.jpg" alt="Chocolate Cream Roll" />
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Chocolate Cream Roll</span>
+                <span class="menu-item-price">&#8364;4,00/slice</span>
+              </h3>
+              <p class="menu-item-description">
+                Rich and irresistible chocolate sponge cake with whipped cream filling. The cake is
+                made with real cocoa, without added sugar, and the whipped cream is also sugar-free.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img class="menu-item-image" src="./images/cake4.png" alt="Red Velvet Cake Roll" />
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Red Velvet Cake Roll</span>
+                <span class="menu-item-price">&#8364;5,00/slice</span>
+              </h3>
+              <p class="menu-item-description">
+                Tender and moist cake stuffed with delicious cream cheese frosting that is as light
+                and fluffy as whipped cream.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <h2 class="menu-group-heading">Ice Cream</h2>
+        <div class="menu-group">
+          <div class="menu-item">
+            <img
+              class="menu-item-image"
+              src="./images/icecream1.jpg"
+              alt="Stracciatella Ice Cream Wafer"
+            />
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Stracciatella</span>
+                <span class="menu-item-price">&#8364;2,00</span>
+              </h3>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              class="menu-item-image"
+              src="./images/icecream2.jpg"
+              alt="Chocholate Ice Cream Wafer"
+            />
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Chocolate</span>
+                <span class="menu-item-price">&#8364;2,00</span>
+              </h3>
+              
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              class="menu-item-image"
+              src="./images/icecream3.jpg"
+              alt="Strawberry Ice Cream Wafer"
+            />
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Strawberry</span>
+                <span class="menu-item-price">&#8364;2,00</span>
+              </h3>
+              
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              class="menu-item-image"
+              src="./images/icecream4.jpg"
+              alt="Green Tea Ice Cream Wafer"
+            />
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Pistachio</span>
+                <span class="menu-item-price">&#8364;2,00</span>
+              </h3>
+            
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <h2 class="menu-group-heading">Drinks</h2>
+        <div class="menu-group">
+          <div class="menu-item">
+            <img
+              class="menu-item-image"
+              src="./images/drink1.jpg"
+              alt="Butterfly Pea Flower Iced Tea"
+            />
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Butterfly Pea Flower Iced Tea</span>
+                <span class="menu-item-price">&#8364;5,00</span>
+              </h3>
+              <p class="menu-item-description">
+                A visually striking tea made from butterfly pea flowers, which change color from blue to purple when mixed with lemon or lime juice.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img class="menu-item-image" src="./images/drink3.jpg" alt="Korean Strawberry Milk" />
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Korean Strawberry Milk</span>
+                <span class="menu-item-price">&#8364;4,50</span>
+              </h3>
+              <p class="menu-item-description">
+                A super cute, pastel-colored drink made with homemade strawberry syrup and fresh strawberry chunks mixed with milk.
+              </p>
+              
+            </div>
+          </div>
+          <div class="menu-item">
+            <img
+              class="menu-item-image"
+              src="./images/drink2.jpg"
+              style="background-color: white"
+              alt="Dalgona Matcha"
+            />
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">Dalgona Matcha</span>
+                <span class="menu-item-price">&#8364;5,50</span>
+              </h3>
+              <p class="menu-item-description">A twist on the Dalgona coffee trend, this version swaps coffee for matcha.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------- Contact Section --------------->
+    <div class="about-flex-wrapper" id="contact">
+      <h1 class="divider">Contact Us</h1>
+    </div>
+    <div class="contact-container">
+      <div>
+        <h2>Location</h2>
+        <hr class="hr-full" />
+        <br />
+        <div>
+          <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3917.041904769626!2d78.07278077460535!3d10.96020725577781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1698202748117!5m2!1sen!2sin"
+            class="img-map"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+      </div>
+
+      <div>
+        <h2>Contact Info</h2>
+        <hr class="hr-full" />
+        <p class="first-letter">
+          <b>Address:</b><br />
+          vaiyapuri nagar,5<sup>th</sup>cross,karur.
+        </p>
+        <p class="first-letter"><b>Phone Number:</b><br /> +91-9876543210</p>
+        <p class="first-letter">
+          <b>Email:</b><br />
+          dessertcafekarur@gmail.com
+        </p>
+        <br />
+        <hr class="hr-full" />
+        <table>
+          <tr>
+            <th colspan="2" class="first-letter">Hours of Operation</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>Monday - Thursday</td>
+            <td class="left-align">10:00am - 11:00pm</td>
+          </tr>
+          <tr>
+            <td>Friday &#38; Saturday</td>
+            <td class="left-align">10:00am - 1:00am</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td class="left-align">10:00am - 10:00pm</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&copy;2023 Dessert Caf&eacute;</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
